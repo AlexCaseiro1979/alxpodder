@@ -19,17 +19,20 @@ For each podcast (see the example.apodder file, it is quite easy):
 2. a line where the url of the RSS feed is declared
 
 To use the script, just call it with the file of the RSS feed(s) as argument, for example:
+
 	alxpodder.sh example.apodder
 
 ## The first time
 
 The first time alxpodder.sh is used, the podcast.log database is probably empty. One can avoid downloading a huge number of podcasts (if such is not wished) using no-download as a second argument:
+
 	alxpodder.sh example.apodder no-download
 
 ## Cleaning a session that did not end properly
 
 If a session is not ended properly, the urls of the files downloaded during that session won't be kept in the podcast.log database (they will be stored in the temporary file temp_pc.log).
 In order to avoid downloading the files again in the next session, one can clean the temp_pc.log file and add the urls to the podcast.log database using clean as the argument when calling alxpodder.sh:
+
 	alxpodder.sh clean
 
 ## Adding/deleting an entry to the podcast list
