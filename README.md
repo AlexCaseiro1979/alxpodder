@@ -23,6 +23,9 @@ To use the script, just call it with the file of the RSS feed(s) as argument, fo
 
 ## The first time
 
+The first time alxpodder.sh is used, the podcast.log database is probably empty. One can avoid downloading a huge number of podcasts (if such is not wished) using no-download as a second argument:
+	alxpodder.sh example.apodder no-download
+
 ## Cleaning a session that did not end properly
 
 If a session is not ended properly, the urls of the files downloaded during that session won't be kept in the podcast.log database (they will be stored in the temporary file temp_pc.log).
